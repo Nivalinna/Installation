@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Skapar Chief"
+sudo useradd -m -k /home/skeleton_dir/ Chief
+sudo passwd Chief 
+sudo usermod -G sudo Chief
+
+echo "Skapar Coke"
+sudo useradd -m -k /home/skeleton_dir/Coke
+sudo passwd Coke
+
+echo "Skapar Dude"
+sudo useradd -m -k /home/skeleton_dir/Dude
+sudo passwd Dude
+
